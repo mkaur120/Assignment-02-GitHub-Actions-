@@ -6,7 +6,7 @@ import * as http from 'http';
 const dbConfig = {
     host: 'mydatabase.com',
     user: 'admin1',
-    password: 'secret123',
+    password: 'secret123456',
     database: 'mydb'
 };
 
@@ -62,4 +62,5 @@ function saveToDb(data: string) {
     const data = await getData();
     saveToDb(data);
     sendEmail('admin@example.com', 'User Input', userInput);
+
 })();
